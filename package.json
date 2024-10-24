@@ -4,7 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build"
+    "build": "ng build",
+    "e2e": "npx playwright test",
+    "e2e:report": "npx playwright show-report",
+    "playwright:install": "npx playwright install"
   },
   "dependencies": {
     "@angular/animations": "^18.1.0",
@@ -25,6 +28,7 @@
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13",
-    "typescript": "~5.5.0"
+    "typescript": "~5.5.0",
+    "@playwright/test": "^1.47.2"
   }
 }
