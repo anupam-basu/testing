@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  text-align: center;
+}
+
+.animate-spin {
+  border-right-color: transparent;
+  border-left-color: transparent;
+}

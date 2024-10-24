@@ -1,0 +1,44 @@
+<div class="bg-gray-100 min-h-screen flex flex-col">
+  <!-- Header Section -->
+  <header class="bg-blue-600 text-white py-6 shadow-md">
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl font-bold">Customer Information Portal</h1>
+      <p class="mt-2 text-lg">Easily search and view customer details</p>
+    </div>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="container mx-auto px-6 py-8 flex-grow">
+    <!-- Information Box -->
+    <div class="bg-white shadow-md rounded-lg p-6 mb-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+        Welcome to the Customer Information Portal
+      </h2>
+      <p class="text-gray-600">
+        Use the search functionality to filter through the list of customers.
+        Click on a customer row to view more details about them.
+      </p>
+      <p class="text-gray-600 mt-2">
+        To get started, use the search bar or browse the table below to view all
+        customer records.
+      </p>
+    </div>
+
+    <!-- Table Section -->
+    <div class="bg-white shadow-md rounded-lg p-6">
+      <!-- Table Component Placeholder -->
+      <div
+        class="border border-dashed border-gray-300 p-6 rounded-lg text-center text-gray-500"
+      >
+        <app-customer-table [customers]="customers$ | async" />
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-800 text-white py-4 mt-8">
+    <div class="container mx-auto text-center">
+      <p>© 2024 Customer Information Portal. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
