@@ -63,3 +63,6 @@ GIVEN the system fails to retrieve data from the mock API
 WHEN there is an error during data fetch
 THEN the system should display an error message
 AND provide an option to retry the data retrieval.
+
+
+
